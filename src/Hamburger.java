@@ -8,10 +8,11 @@ public class Hamburger {
 //    roll type, meat, and price.
 
 
-    public Hamburger(String roleType, Meat meat, double price) {
+    public Hamburger(String roleType,String mymeat, double price) {
         this.roleType = roleType;
-        this.meat = meat;
+        this.mymeat = mymeat;
         this.price = price;
+        System.out.println("Hamburger --> Basic Hamburger Created");
 
     }
 }

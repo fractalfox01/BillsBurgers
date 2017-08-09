@@ -43,23 +43,30 @@ public class BillsBurgerShop {
         System.out.println("Choose Type of Burger:\n\t1 for\tBasic\n\t2 for\tHealthy\n\t3 for\tKids\n\t-1 to\tExit");
         burgerType = scan.nextInt();
 
+        if (pickType(scan, burgerType) == "Basic Burger Selected"){
+            Hamburger basic = new Hamburger("Basic","Cow",5.00d);
+        }
+
+    }
+    public static String pickType(Scanner scan, int burgerType){
+
         while (burgerType != -1) {
 
             switch (burgerType) {
                 case 1:
-                    System.out.println("Basic Burger Selected");
-                    break;
+                    return ("Basic Burger Selected");
                 case 2:
-                    System.out.println("Healthy Burger Selected");
-                    break;
+                    return ("Healthy Burger Selected");
                 case 3:
-                    System.out.println("Kids Burger Selected");
-                    break;
+                    return ("Kids Burger Selected");
+                case -1:
+                    return "Exit";
                 default:
-                    System.out.println("Thats not a valid option");
+                    System.out.println("Thats not a valid option, Try again...");
+                    burgerType = scan.nextInt();
             }
-            burgerType = scan.nextInt();
         }
+        return "Null";
     }
 }
 
