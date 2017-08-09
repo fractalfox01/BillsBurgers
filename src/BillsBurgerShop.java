@@ -49,7 +49,7 @@ public class BillsBurgerShop {
         }
         if (pickType(scan, burgerType) == "Healthy Burger Selected"){
             double price = 7.50d;
-            Hamburger healthy = new Healthy("Healthy","Cow",price);
+            Hamburger healthy = new Hamburger("Healthy","Cow",price);
         }
         if (pickType(scan, burgerType) == "Kids Burger Selected"){
             double price = 4.00d;
