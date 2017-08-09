@@ -44,9 +44,17 @@ public class BillsBurgerShop {
         burgerType = scan.nextInt();
 
         if (pickType(scan, burgerType) == "Basic Burger Selected"){
-            Hamburger basic = new Hamburger("Basic","Cow",5.00d);
+            double price = 5.00d;
+            Hamburger basic = new Hamburger("Basic","Cow",price);
         }
-
+        if (pickType(scan, burgerType) == "Healthy Burger Selected"){
+            double price = 7.50d;
+            Hamburger healthy = new Healthy("Healthy","Cow",price);
+        }
+        if (pickType(scan, burgerType) == "Kids Burger Selected"){
+            double price = 4.00d;
+            Hamburger basic = new Hamburger("Kids","Cow",price);
+        }
     }
     public static String pickType(Scanner scan, int burgerType){
 

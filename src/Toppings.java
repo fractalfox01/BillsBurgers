@@ -16,6 +16,7 @@ public class Toppings {
         this.mustard = mustard;
         this.lettuce = lettuce;
         this.guacamole = guacamole;
+        System.out.println("Toppings --> Toppings created");
     }
 
     public boolean isKetchup() {
