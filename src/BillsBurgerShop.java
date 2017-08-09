@@ -2,7 +2,6 @@
 Author: FractalFox
 
 Program Requirments:
-
         The purpose of the application is to help a ficticious company calles Bill's Burgers to manage
         their process of selling hamburgers.
         Our application will help Bill to select types of burgers, some of the additional items (additions) to
