@@ -8,7 +8,7 @@ Program Requirements:
         be added to the burgers and pricing.
         We want to create a base hamburger, but also two other types of hamburgers that are popular ones in
         Bill's store.
-        The basic hamburger should hae the following items.
+        The basic hamburger should have the following items.
         bread roll type, meat and up to 4 additional toppings (things like lettuce, tomato, carrot, etc) that
         the customer can select to be added to the burger. Each one of these items gets charged an additional
         price so you need some way to track how many items got added and to calculate the price (for the base
@@ -26,11 +26,40 @@ Program Requirements:
         For the two additional classes this may require you to be looking at the base class for pricing and then
         adding totals onto that.
          */
+
+import java.util.Scanner;
+
 public class BillsBurgerShop {
     public static void main(String[] args){
 
         System.out.println("------------------------------\n\t Bills' Burger Shop\nProduction Management SoftWare\n------------------------------\n\n");
 
+        buildBurger();
+    }
+    public static void buildBurger(){
+        Scanner scan = new Scanner(System.in);
+        int burgerType;
+
+        System.out.println("Choose Type of Burger:\n\t1 for\tBasic\n\t2 for\tHealthy\n\t3 for\tKids\n\t-1 to\tExit");
+        burgerType = scan.nextInt();
+
+        while (burgerType != -1) {
+
+            switch (burgerType) {
+                case 1:
+                    System.out.println("Basic Burger Selected");
+                    break;
+                case 2:
+                    System.out.println("Healthy Burger Selected");
+                    break;
+                case 3:
+                    System.out.println("Kids Burger Selected");
+                    break;
+                default:
+                    System.out.println("Thats not a valid option");
+            }
+            burgerType = scan.nextInt();
+        }
     }
 }
 
